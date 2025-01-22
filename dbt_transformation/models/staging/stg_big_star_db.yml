@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+    - name: customer_id
+      description: "Unique and not NULL identifier for the customer"
+      tests:
+        - unique
+        - not_null
+  - name: stg_orders
+    columns:
+    - name: order_id
+      description: "Unique and not NULL identifier for the order"
+      tests:
+        - unique
+        - not_null
+    - name: order_status
+      description: "Status of the order"
+      tests:
+        - accepted_values:
+            values: 
+              - delivered
+              - approved
+              - canceled
+              - created
+              - invoiced
+              - processing
+              - shipped
+              - unavailable
+    - name: customer_id
+      description: "Unique and not NULL identifier for the customer"
+      tests:
+        - relationships:
+            to: ref('stg_customers')
+            field: customer_id
