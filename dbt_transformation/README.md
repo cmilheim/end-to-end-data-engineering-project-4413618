@@ -17,8 +17,10 @@ Try running the following commands:
 
 ### Notes:
 $env:DBT_BIGQUERY_DATASET = "transformed_data"
-$env:DBT_BIGQUERY_KEYFILE_PATH = "US"         
-$env:DBT_BIGQUERY_LOCATION = "US"    
-$env:DBT_BIGQUERY_KEYFILE_PATH = "C:\Users\Chris\Downloads\big-star-collectibles-447417-35c5858a44c3.json"  
+$env:DBT_BIGQUERY_LOCATION = "US"
+$env:DBT_BIGQUERY_KEYFILE_PATH = "C:\Users\Chris\Downloads\big-star-collectibles-447417-35c5858a44c3.json"
 $env:DBT_BIGQUERY_PROJECT = "big-star-collectibles-447417"
 $env:DBT_PROFILES_DIR = "C:\Users\Chris\code\end-to-end-data-engineering-project-4413618\dbt_transformation\config"
+$env:DBT_PROJECT_DIR = "C:\Users\Chris\code\end-to-end-data-engineering-project-4413618\dbt_transformation"
+$env:DBT_MANIFEST_DIR = "C:\Users\Chris\code\end-to-end-data-engineering-project-4413618\dbt_transformation\target"
+$env:AIRBYTE_PASSWORD = "4v84MMUxVVBbfU5dIxllxgBd6MI1p7Bn"
